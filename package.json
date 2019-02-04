@@ -2,8 +2,9 @@
   "name": "deno-vscode",
   "displayName": "deno-vscode",
   "description": "A deno extension for vscode to make it easier for developers",
-  "icon": "https://i.imgur.com/Py5Y3Ji.png",
+  "icon": "images/logo.png",
   "version": "0.0.1",
+  "publisher": "ameerthehacker",
   "engines": {
     "vscode": "^1.30.0"
   },
@@ -21,6 +22,10 @@
         "title": "deno init"
       }
     ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ameerthehacker/deno-vscode.git"
   },
   "scripts": {
     "vscode:prepublish": "yarn run compile",
