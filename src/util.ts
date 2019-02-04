@@ -90,6 +90,8 @@ export const installNodeDep = (path: string) => {
 
     if (sync("npm")) {
       exec("npm install").on("close", resolve);
+    } else if (sync("yarn")) {
+      exec("yarn").on("close", resolve);
     } else {
       resolve();
     }
