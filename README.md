@@ -1,4 +1,4 @@
-<h1 align="center">Deno Visual Studio Code Extension :tada:</h1>
+<h1 align="center">Deno Visual Studio Code Extension</h1>
 
 <p align="center"><img src="https://i.imgur.com/bn4rXpl.gif"/></p>
 
@@ -16,4 +16,4 @@ The above steps will create all the neccessary files for `deno` dev environment
 
 ## License
 
-MIT © [Ameer Jhan](mailto:ameerjhanprof@gmail.com)
+MIT © [Ameer Jhan](https://github.com/ameerthehacker)
