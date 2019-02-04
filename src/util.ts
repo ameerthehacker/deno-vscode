@@ -69,7 +69,7 @@ export const createSettingsJSON = (path: string) => {
 };
 
 export const initDeno = (vscode: any, path: string) => {
-  vscode.w
+  vscode.w;
   createTsConfigJSON(path);
   createPackageJSON(path);
   createSettingsJSON(path);
@@ -90,6 +90,8 @@ export const installNodeDep = (path: string) => {
 
     if (sync("npm")) {
       exec("npm install").on("close", resolve);
+    } else {
+      resolve();
     }
   });
 };

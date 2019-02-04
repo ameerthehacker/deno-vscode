@@ -2,6 +2,7 @@
   "name": "deno-vscode",
   "displayName": "deno-vscode",
   "description": "A deno extension for vscode to make it easier for developers",
+  "icon": "https://i.imgur.com/Py5Y3Ji.png",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.30.0"
