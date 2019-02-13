@@ -64,7 +64,7 @@ export const createSettingsJSON = (path: string) => {
 
   writeFileSync(
     `${path}${sep}.vscode${sep}settings.json`,
-    getPackageJSONContent(path)
+    getSettingsJSONContent(path)
   );
 };
 
