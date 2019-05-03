@@ -18,7 +18,8 @@ export const isTsconfigExists = (path: string) => {
 
 export const relativePathToDeno = (path: string) => {
   const denoHomeDir = `${homedir}${sep}.deno`;
-  const relativePathToDeno = relative(path, denoHomeDir);
+  let relativePathToDeno = relative(path, denoHomeDir);
+  relativePathToDeno = relativePathToDeno.replace(/\\/g, "/");
 
   return relativePathToDeno;
 };

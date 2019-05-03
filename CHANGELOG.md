@@ -8,3 +8,10 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [v0.0.4]
 - Fix the bug of settings.json content being filled with contents of package.json
+
+## [v0.0.5]
+- Fix the bug of extension breaking in windows
+
+## [v0.0.7]
+
+- Revert changes made in v0.0.5 and fix the extension breaking in windows
