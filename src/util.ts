@@ -25,7 +25,7 @@ export const relativePathToDeno = (path: string) => {
 };
 
 export const createDenoTyping = () => {
-  exec(`deno --types > ${homedir}${sep}.deno${sep}deno.d.ts`);
+  exec(`deno types > ${homedir}${sep}.deno${sep}deno.d.ts`);
 };
 
 export const getTsConfigJSONContent = (path: string) => {
