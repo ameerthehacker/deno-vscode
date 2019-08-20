@@ -9,6 +9,11 @@
 
 The above steps will create all the neccessary files for `deno` dev environment
 
+## Installation
+
+1. Install deno and add it to path
+2. Install extension and restart VS Code
+
 ## What is does?
 
 1. It creates the deno.d.ts typings in the `.deno` directory
