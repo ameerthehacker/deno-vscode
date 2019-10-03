@@ -2,6 +2,10 @@
 
 <p align="center"><img src="https://i.imgur.com/bn4rXpl.gif"/></p>
 
+<img alt="Visual Studio Marketplace Version" src="https://img.shields.io/visual-studio-marketplace/v/ameerthehacker.deno-vscode">
+
+<a href="https://marketplace.visualstudio.com/items?itemName=ameerthehacker.deno-vscode" target="_blank"><img alt="Visual Studio Marketplace Downloads" src="https://img.shields.io/visual-studio-marketplace/d/	ameerthehacker.deno-vscode"></a>
+
 ## Usage
 
 - Run `Cmd + P` on Mac or `Ctrl + P` on Windows and linux
