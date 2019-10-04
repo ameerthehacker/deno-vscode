@@ -1,48 +1,56 @@
 {
-  "name": "deno-vscode",
-  "displayName": "deno-vscode",
-  "description": "A deno extension for vscode to make it easier for developers",
-  "icon": "images/logo.png",
-  "version": "0.0.8",
-  "publisher": "ameerthehacker",
-  "engines": {
-    "vscode": "^1.30.0"
-  },
-  "categories": [
-    "Other"
-  ],
-  "activationEvents": [
-    "onCommand:extension.denoInit"
-  ],
-  "main": "./out/extension.js",
-  "contributes": {
-    "commands": [
-      {
-        "command": "extension.denoInit",
-        "title": "deno init"
-      }
-    ]
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/ameerthehacker/deno-vscode.git"
-  },
-  "scripts": {
-    "vscode:prepublish": "yarn run compile",
-    "compile": "tsc -p ./",
-    "watch": "tsc -watch -p ./",
-    "postinstall": "node ./node_modules/vscode/bin/install",
-    "test": "yarn run compile && node ./node_modules/vscode/bin/test"
-  },
-  "devDependencies": {
-    "@types/command-exists": "^1.2.0",
-    "@types/mocha": "^2.2.42",
-    "@types/node": "^8.10.25",
-    "tslint": "^5.8.0",
-    "typescript": "^3.1.4",
-    "vscode": "^1.1.25"
-  },
-  "dependencies": {
-    "command-exists": "^1.2.8"
-  }
+    "name": "deno-vscode",
+    "displayName": "deno-vscode",
+    "description": "A deno extension for vscode to make it easier for developers",
+    "icon": "images/logo.png",
+    "version": "0.0.8",
+    "publisher": "ameerthehacker",
+    "engines": {
+        "vscode": "^1.30.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onCommand:extension.denoInit"
+    ],
+    "main": "./out/extension.js",
+    "contributes": {
+        "commands": [
+            {
+                "command": "extension.denoInit",
+                "title": "deno init"
+            }
+        ]
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "pretty-quick --staged"
+        }
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ameerthehacker/deno-vscode.git"
+    },
+    "scripts": {
+        "vscode:prepublish": "yarn run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "test": "yarn run compile && node ./node_modules/vscode/bin/test"
+    },
+    "devDependencies": {
+        "@types/command-exists": "^1.2.0",
+        "@types/mocha": "^2.2.42",
+        "@types/node": "^8.10.25",
+        "husky": "^3.0.8",
+        "prettier": "^1.18.2",
+        "pretty-quick": "^1.11.1",
+        "tslint": "^5.8.0",
+        "typescript": "^3.1.4",
+        "vscode": "^1.1.25"
+    },
+    "dependencies": {
+        "command-exists": "^1.2.8"
+    }
 }
