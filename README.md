@@ -1,4 +1,5 @@
 <h1 align="center">Deno Visual Studio Code Extension</h1>
+<h4 align="center">DEPRECATED Please use <a href="https://github.com/denoland/vscode_deno">vscode-deno</a></h4>
 
 <p align="center">
 <img alt="Visual Studio Marketplace Version" src="https://img.shields.io/visual-studio-marketplace/v/ameerthehacker.deno-vscode">
